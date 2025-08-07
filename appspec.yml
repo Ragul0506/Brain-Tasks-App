@@ -1,0 +1,10 @@
+version: 0.0
+Resources:
+  - myEKS:
+      Type: AWS::EKS::Manifest
+      Properties:
+        clusterName: brain-tasks-cluster
+        manifest:
+          - deployment.yaml
+          - service.yaml
+
